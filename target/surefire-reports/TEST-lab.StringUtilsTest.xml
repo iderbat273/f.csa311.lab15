@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="lab.CalculatorTest" time="0.076" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="lab.StringUtilsTest" time="0.039" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,10 +58,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="multiply_simple" classname="lab.CalculatorTest" time="0.028"/>
-  <testcase name="add_negative" classname="lab.CalculatorTest" time="0.001"/>
-  <testcase name="subtract_simple" classname="lab.CalculatorTest" time="0.0"/>
-  <testcase name="divide_byZero" classname="lab.CalculatorTest" time="0.004"/>
-  <testcase name="divide_simple" classname="lab.CalculatorTest" time="0.001"/>
-  <testcase name="add_simple" classname="lab.CalculatorTest" time="0.001"/>
+  <testcase name="reverse_shouldReverseAsciiString" classname="lab.StringUtilsTest" time="0.004"/>
+  <testcase name="isBlank_shouldReturnFalse_whenHasText" classname="lab.StringUtilsTest" time="0.002"/>
+  <testcase name="capitalize_shouldReturnEmpty_whenEmpty" classname="lab.StringUtilsTest" time="0.001"/>
+  <testcase name="reverse_shouldReturnEmpty_whenInputIsEmpty" classname="lab.StringUtilsTest" time="0.001"/>
+  <testcase name="isBlank_shouldReturnTrue_whenSpacesOnly" classname="lab.StringUtilsTest" time="0.001"/>
+  <testcase name="reverse_shouldReturnNull_whenInputIsNull" classname="lab.StringUtilsTest" time="0.001"/>
+  <testcase name="capitalize_shouldReturnNull_whenNull" classname="lab.StringUtilsTest" time="0.0"/>
+  <testcase name="capitalize_shouldNotChangeAlreadyCapitalized" classname="lab.StringUtilsTest" time="0.006"/>
+  <testcase name="isBlank_shouldReturnTrue_whenNull" classname="lab.StringUtilsTest" time="0.004"/>
+  <testcase name="capitalize_shouldCapitalizeFirstLetter" classname="lab.StringUtilsTest" time="0.001"/>
+  <testcase name="isBlank_shouldReturnTrue_whenEmptyString" classname="lab.StringUtilsTest" time="0.001"/>
+  <testcase name="reverse_shouldReverseUnicodeString" classname="lab.StringUtilsTest" time="0.001"/>
 </testsuite>
